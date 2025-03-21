@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /drafts/
+Disallow: /private/
+Allow: /
+Sitemap: https://www.drmubashirwani.com/sitemap.xml
