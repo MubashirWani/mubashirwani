@@ -48,6 +48,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://www.drmubashirwani.com/images/favicon_MW-.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="https://www.drmubashirwani.com/images/favicon_MW-.png">
 
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
 <!-- Mobile Responsive Fix -->
 <style>
     @media screen and (max-width: 768px) {
@@ -206,6 +208,126 @@
 
 </nav>
 
+<canvas id="matrixCanvas"></canvas>
+
+<section class="hero-overlay">
+  <div class="hero-title" title="Hexadecimal for ASCII 'M'">// M: <span class="code-value">4D</span></div>
+  <p class="hero-sub">Machine-Level. Human-Driven.</p>
+  <p class="subtitle">Research. Code. Optimize. Repeat.</p>
+</section>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    overflow-x: hidden;
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+
+  #matrixCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 30vh;
+    color: #00ffcc;
+    text-shadow: 0 0 12px #00ffcc;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+
+  .code-value {
+    color: #ffffff;
+    text-shadow: 0 0 12px #ffffff;
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: #bfffe0;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #aaf2d0;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+
+    .hero-sub,
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<script>
+  const canvas = document.getElementById("matrixCanvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  const binary = "01";
+  const fontSize = 16;
+  const columns = Math.floor(canvas.width / fontSize);
+  const drops = Array(columns).fill(1);
+
+  function drawMatrix() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#00ffcc";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = binary[Math.floor(Math.random() * binary.length)];
+      const x = i * fontSize;
+      const y = drops[i] * fontSize;
+
+      ctx.fillText(char, x, y);
+
+      if (y > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(drawMatrix, 50);
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>  <div class="content-wrapper">
+    
+  </div>
 <div style="text-align: center; margin-top: 40px;">
 <h1 style="font-size: 2.8rem; font-family: 'Courier New', monospace; text-align: center;">
   <span style="color: #00adb5;">// M: 01001101</span>
