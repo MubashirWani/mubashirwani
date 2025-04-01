@@ -100,17 +100,24 @@
 
  
 
-    <meta name="author" content="Dr. Mubashir Wani" />
-    <meta name="description" content="" />
+<meta name="author" content="Dr. Mubashir Wani" />
+<meta name="description" content="Welcome to my blog! This is a short intro to the post. Here comes the rest of the post that will only be visible after …" />
+<meta name="keywords" content="">
+
+
   <meta property="og:site_name" content="Mubashir H. Wani"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Mubashir H. Wani"/>
-  <meta property="og:description" content=""/>
+  <meta property="og:title" content="My Second Blog Post"/>
+  <meta property="og:description" content="Welcome to my blog! This is a short intro to the post. Here comes the rest of the post that will only be visible after …"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://www.drmubashirwani.com"/>
+  <meta property="og:url" content="https://www.drmubashirwani.com/my-first-blog/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-03-16 00:00:00+04:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://www.drmubashirwani.com/author/dr-mubashir-wani.html">
+  <meta property="article:section" content="Blog"/>
   <meta property="og:image" content="img/profile.jpg">
 
-  <title>Mubashir H. Wani</title>
+  <title>Mubashir H. Wani &ndash; My Second Blog Post</title>
 
 
 </head>
@@ -215,163 +222,34 @@
 
 </nav>
 
-<div class="hero-container">
-  <canvas id="matrixCanvas"></canvas>
-
-  <div class="hero-overlay">
-    <div class="hero-title" title="Hexadecimal for ASCII 'M'">// M: <span class="code-value">4D</span></div>
-    <p class="hero-sub">Machine-Level. Human-Driven.</p>
-    <p class="subtitle">Research. Code. Optimize. Repeat.</p>
-  </div>
-</div>
-
-<style>
-.hero-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  background: black;
-  margin-bottom: 2rem;
-}
-
-#matrixCanvas {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  top: 120px;
-  color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc;
-  font-family: 'Fira Code', 'Courier New', monospace;
-}
-
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.code-value {
-  color: #fff;
-  text-shadow: 0 0 12px #fff;
-}
-
-.hero-sub {
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-bottom: 0.4rem;
-}
-
-.subtitle {
-  font-size: 1rem;
-  color: #bfffe0;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    height: 280px;
-  }
-  .hero-title { font-size: 1.8rem; }
-}
-</style>
-
-<script>
-const canvas = document.getElementById("matrixCanvas");
-const ctx = canvas.getContext("2d");
-
-canvas.height = 400;
-canvas.width = window.innerWidth;
-
-const binary = "01";
-const fontSize = 16;
-const columns = Math.floor(canvas.width / fontSize);
-const drops = Array(columns).fill(1);
-
-function drawMatrix() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  ctx.fillStyle = "#00ffcc";
-  ctx.font = fontSize + "px monospace";
-
-  for (let i = 0; i < drops.length; i++) {
-    const char = binary[Math.floor(Math.random() * binary.length)];
-    const x = i * fontSize;
-    const y = drops[i] * fontSize;
-
-    ctx.fillText(char, x, y);
-
-    if (y > canvas.height && Math.random() > 0.975) {
-      drops[i] = 0;
-    }
-    drops[i]++;
-  }
-}
-
-setInterval(drawMatrix, 50);
-
-window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = 400;
-});
-</script>  <div class="content-wrapper">
-    
-  </div>
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="https://www.drmubashirwani.com/my-first-blog/">My First Blog Post</a></h2>
+      
+    <h1 id="my-second-blog-post">My Second Blog Post</h1>
     <p>
       Posted on Sun 16 March 2025 in <a href="https://www.drmubashirwani.com/category/blog/">Blog</a>
 
-
     </p>
   </header>
+
+
   <div>
-      <div><p>Welcome to my blog! This is a short intro to the post.</p>
+    <p>Welcome to my blog! This is a short intro to the post.</p>
 <!-- PELICAN_END_SUMMARY -->
-<p>Here comes the rest of the post that will only be visible after …</p></div>
-        <br>
-        <a class="btn"
-           href="https://www.drmubashirwani.com/my-first-blog/">
-          Continue reading
-        </a>
+<p>Here comes the rest of the post that will only be visible after clicking &quot;Read more&quot;. It might include deeper insights or longer explanations.</p>
+
   </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="https://www.drmubashirwani.com/my-first-blog/">My Second Blog Post</a></h2>
+  <div class="tag-cloud">
     <p>
-      Posted on Sun 16 March 2025 in <a href="https://www.drmubashirwani.com/category/blog/">Blog</a>
-
-
     </p>
-  </header>
-  <div>
-      <div><p>Welcome to my blog! This is a short intro to the post.</p>
-<!-- PELICAN_END_SUMMARY -->
-<p>Here comes the rest of the post that will only be visible after …</p></div>
-        <br>
-        <a class="btn"
-           href="https://www.drmubashirwani.com/my-first-blog/">
-          Continue reading
-        </a>
   </div>
+
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
 
 <footer>
 <p>&copy; 2025 Dr. Mubashir Wani</p>
