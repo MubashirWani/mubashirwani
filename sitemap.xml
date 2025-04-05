@@ -6,7 +6,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -20,21 +20,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/archives.html</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/author/dr-mubashir-wani.html</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/authors.html</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -55,37 +55,16 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/categories.html</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/category/blog/</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://www.drmubashirwani.com/category/misc/</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://www.drmubashirwani.com/contact/</loc>
-<lastmod>2025-04-05T00:00:00+04:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-
-<url>
-<loc>https://www.drmubashirwani.com/contact/thank-you/</loc>
-<lastmod>2025-04-05T00:00:00+04:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
 </url>
 
 <url>
@@ -111,7 +90,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/tags.html</loc>
-<lastmod>2025-04-05T14:25:23-00:00</lastmod>
+<lastmod>2025-04-05T14:33:49-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
