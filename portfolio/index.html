@@ -263,7 +263,7 @@
   <div>
 <!-- Dynamic Timeline Banner -->
 <div style="display: flex; align-items: center; justify-content: space-around; font-size: 1.1em; background: #f5f5f5; padding: 10px; border-radius: 8px; margin-bottom: 2em;">
-  🎓 BEng → 🌍 MSc → 🔬 PhD → 🧪 R&D → ✈️ Sales Engineering → 🏗️ Design Engineering → 🏅 CEng
+  🎓 BEng → 🌍 MSc → 🔬 PhD → 🧪 R&D → ✈️ Sales Eng → 🏗️ Eng. Role → 🏅 CEng
 </div>
 <blockquote>
 <p>“A continuous journey from research in intelligent energy systems to meaningful contributions in engineering practice — driven by curiosity, responsibility, and a desire to create sustainable impact.”</p>
@@ -333,55 +333,7 @@
   <div style="background:#ffe; padding:10px; border-radius:6px;">🧪 <strong>MBIE R&D Fellowship</strong><br><small>New Zealand (via Callaghan Innovation)</small></div>
   <div style="background:#fef; padding:10px; border-radius:6px;">📡 <strong>IEEE IECON Presenter</strong><br><small>Research on HVAC Optimization</small></div>
   <div style="background:#eef; padding:10px; border-radius:6px;">🌱 <strong>LEED Green Associate</strong><br><small>In Progress</small></div>
-</div>
-<hr />
-<h2>🔧 JavaScript for Collapsible Sections</h2>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const coll = document.querySelectorAll(".collapsible");
-    coll.forEach(btn => {
-      btn.addEventListener("click", function () {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    });
-  });
-</script>
-<style>
-  .collapsible {
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-
-  .collapsible:hover {
-    background-color: #ddd;
-  }
-
-  .content {
-    padding: 0 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    background-color: #fafafa;
-    border-left: 3px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 0 0 5px 5px;
-  }
-</style>  </div>
+</div>  </div>
 </article>
 
 <footer>
@@ -400,5 +352,5 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "description": ""
 }
 </script>
-</body>
+<script src="https://www.drmubashirwani.com/theme/js/collapsible.js"></script></body>
 </html>
