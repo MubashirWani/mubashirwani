@@ -286,8 +286,8 @@
 </ul>
 <hr />
 <h2>🧭 Professional Roles</h2>
-<p><button class="collapsible">🏗️ Electrical Engineering Professional — Jacobs Engineering Group Inc. (Dubai, UAE) – Mar 2023–Present</button></p>
-<div class="content">
+<details class="collapsible-style">
+  <summary>🏗️ Electrical Engineering Professional — Jacobs Engineering Group Inc. (Dubai, UAE) – Mar 2023–Present</summary>
   <ul>
     <li>Leading design efforts for electrical and ELV systems within large-scale infrastructure developments.</li>
     <li>Providing engineering leadership across design coordination and stakeholder engagement.</li>
@@ -295,34 +295,34 @@
     <li>Achieved Project Management Professional (PMP®, PMI - 2024) credential.</li>
     <li>Pursuing LEED-GA certification to advance sustainability credentials.</li>
   </ul>
-</div>
-<p><button class="collapsible">✈️ Sales Application Engineer — Electrotest Ltd. (NZ) – Jun 2022–Feb 2023</button></p>
-<div class="content">
+</details>
+<details class="collapsible-style">
+  <summary>✈️ Sales Application Engineer — Electrotest Ltd. (NZ) – Jun 2022–Feb 2023</summary>
   <ul>
     <li>Delivered technical solutions for healthcare, aviation, and educational clients.</li>
     <li>Strengthened engineering pre-sales workflows and client consultations.</li>
   </ul>
-</div>
-<p><button class="collapsible">🧪 R&amp;D Fellow — Fisher &amp; Paykel Technologies (NZ) – Dec 2019–Dec 2022</button></p>
-<div class="content">
+</details>
+<details class="collapsible-style">
+  <summary>🧪 R&D Fellow — Fisher & Paykel Technologies (NZ) – Dec 2019–Dec 2022</summary>
   <ul>
     <li>Developed intelligent control systems using AI, MATLAB™, CFD, and EnergyPlus™.</li>
     <li>Work supported by MBIE R&D Fellowship (via Callaghan Innovation).</li>
     <li>Presented research at IEEE IECON Conference 📡.</li>
   </ul>
-</div>
-<p><button class="collapsible">🔧 Embedded Systems Lab Technician — University of Auckland – Jun 2019–Feb 2020</button></p>
-<div class="content">
+</details>
+<details class="collapsible-style">
+  <summary>🔧 Embedded Systems Lab Technician — University of Auckland – Jun 2019–Feb 2020</summary>
   <ul>
     <li>Revived FESTO MPS 500 system; integrated Beckhoff PLCs and new control infrastructure.</li>
   </ul>
-</div>
-<p><button class="collapsible">🧑‍🏫 Graduate Teaching Assistant — University of Auckland – Nov 2018–Nov 2021</button></p>
-<div class="content">
+</details>
+<details class="collapsible-style">
+  <summary>🧑‍🏫 Graduate Teaching Assistant — University of Auckland – Nov 2018–Nov 2021</summary>
   <ul>
     <li>Delivered lab demos, mentored students, and supported academic instruction in electrical engineering courses.</li>
   </ul>
-</div>
+</details>
 <hr />
 <h2>🏅 Certifications &amp; Recognitions</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
@@ -333,39 +333,27 @@
   <div style="background:#eef; padding:10px; border-radius:6px;">🌱 <strong>LEED Green Associate</strong><br><small>In Progress</small></div>
 </div>
 <style>
-  .collapsible {
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.2s;
-  }
-
-  .collapsible:hover {
-    background-color: #ddd;
-  }
-
-  .collapsible.active {
-    background-color: #ccc;
-  }
-
-  .content {
-    padding: 0 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    background-color: #fafafa;
-    border-left: 3px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 0 0 5px 5px;
-  }
+.collapsible-style {
+  margin: 10px 0;
+  border: none;
+  border-left: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+}
+.collapsible-style[open] {
+  background: #e0e0e0;
+}
+.collapsible-style summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 4px 0;
+}
+.collapsible-style summary:hover {
+  color: #222;
+}
 </style>  </div>
 </article>
 
