@@ -261,8 +261,127 @@
     <h1 id="portfolio">Portfolio</h1>
   </header>
   <div>
-<p>My projects and portfolio...</p>
+<!-- Dynamic Timeline Banner -->
+<div style="display: flex; align-items: center; justify-content: space-around; font-size: 1.1em; background: #f5f5f5; padding: 10px; border-radius: 8px; margin-bottom: 2em;">
+  🎓 BEng → 🌍 MSc → 🔬 PhD → 🧪 R&D → ✈️ Sales Engineering → 🏗️ Design Engineering → 🏅 CEng
+</div>
+<blockquote>
+<p>“A continuous journey from research in intelligent energy systems to meaningful contributions in engineering practice — driven by curiosity, responsibility, and a desire to create sustainable impact.”</p>
+</blockquote>
+<hr />
+<h2>🎓 Education</h2>
+<ul>
+<li>
+<p>🎓 <strong>BEng (Hons), Electronics &amp; Communication Engineering</strong><br />
+<em>University of Kashmir, India</em></p>
+</li>
+<li>
+<p>🌍 <strong>MSc, Energy and Sustainability with Electrical Power Engineering</strong><br />
+<em>University of Southampton, UK</em></p>
+</li>
+<li>
+<p>🔬 <strong>PhD, Electrical and Computer Engineering</strong><br />
+<em>University of Auckland, New Zealand</em><br />
+<em>Supported by MBIE R&amp;D Fellowship (via Callaghan Innovation)</em></p>
+</li>
+</ul>
+<hr />
+<h2>🧭 Professional Roles</h2>
+<div class="timeline-section">
+  <button class="collapsible">🏗️ Electrical Engineering Professional — Jacobs Engineering Group Inc. (Dubai, UAE) – Mar 2023–Present</button>
+  <div class="content">
+    <ul>
+      <li>Leading design efforts for electrical and ELV systems within large-scale infrastructure developments.</li>
+      <li>Providing engineering leadership across design coordination and stakeholder engagement.</li>
+      <li>Achieved Chartered Engineer (CEng, IET – 2024).</li>
+      <li>Pursuing LEED-GA certification to advance sustainability credentials.</li>
+    </ul>
   </div>
+<p><button class="collapsible">✈️ Sales Application Engineer — Electrotest Ltd. (NZ) – Jun 2022–Feb 2023</button></p>
+  <div class="content">
+    <ul>
+      <li>Delivered technical solutions for healthcare, aviation, and educational clients.</li>
+      <li>Strengthened engineering pre-sales workflows and client consultations.</li>
+    </ul>
+  </div>
+<p><button class="collapsible">🧪 R&amp;D Fellow — Fisher &amp; Paykel Technologies (NZ) – Dec 2019–Dec 2022</button></p>
+  <div class="content">
+    <ul>
+      <li>Developed intelligent control systems using AI, MATLAB, CFD, and EnergyPlus.</li>
+      <li>Work supported by MBIE R&D Fellowship (via Callaghan Innovation).</li>
+      <li>Presented research at IEEE IECON Conference 📡.</li>
+    </ul>
+  </div>
+<p><button class="collapsible">🔧 Embedded Systems Lab Technician — University of Auckland – Jun 2019–Feb 2020</button></p>
+  <div class="content">
+    <ul>
+      <li>Revived FESTO MPS 500 system; integrated Beckhoff PLCs and new control infrastructure.</li>
+    </ul>
+  </div>
+<p><button class="collapsible">🧑‍🏫 Graduate Teaching Assistant — University of Auckland – Nov 2018–Nov 2021</button></p>
+  <div class="content">
+    <ul>
+      <li>Delivered lab demos, mentored students, and supported academic instruction in electrical engineering courses.</li>
+    </ul>
+  </div>
+</div>
+<hr />
+<h2>🏅 Certifications &amp; Recognitions</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 1em;">
+  <div style="background:#eef; padding:10px; border-radius:6px;">📋 <strong>PMP®</strong><br><small>Project Management Institute, 2024</small></div>
+  <div style="background:#efe; padding:10px; border-radius:6px;">🏅 <strong>CEng</strong><br><small>IET, UK – 2024</small></div>
+  <div style="background:#ffe; padding:10px; border-radius:6px;">🧪 <strong>MBIE R&D Fellowship</strong><br><small>New Zealand (via Callaghan Innovation)</small></div>
+  <div style="background:#fef; padding:10px; border-radius:6px;">📡 <strong>IEEE IECON Presenter</strong><br><small>Research on HVAC Optimization</small></div>
+  <div style="background:#eef; padding:10px; border-radius:6px;">🌱 <strong>LEED Green Associate</strong><br><small>In Progress</small></div>
+</div>
+<hr />
+<h2>🔧 JavaScript for Collapsible Sections</h2>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  });
+</script>
+<style>
+  .collapsible {
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .collapsible:hover {
+    background-color: #ddd;
+  }
+
+  .content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fafafa;
+    border-left: 3px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+  }
+</style>  </div>
 </article>
 
 <footer>
