@@ -293,8 +293,7 @@
   <summary>🏗️ Electrical Engineering Professional — Jacobs Engineering Group Inc. (Dubai, UAE) – Mar 2023–Present</summary>
   <ul>
     <li>Leading design efforts for electrical and ELV systems within large-scale infrastructure developments.</li>
-    <li>Coordinating electrical design and BIM workflows, ensuring interdisciplinary synergy and technical excellence.</li>
-    <li>Contributed to energy-efficient solutions through smart grid design principles and demand-side management.</li>
+    <li>Coordinating electrical/ELV design and BIM workflows, ensuring interdisciplinary synergy and technical excellence.</li>
     <li>Achieved <strong>Chartered Engineer (CEng)</strong> recognition from the IET, UK in 2024.</li>
     <li>Certified as a <strong>Project Management Professional (PMP®)</strong> by PMI in 2024.</li>
     <li>Currently pursuing LEED-GA to further sustainability credentials.</li>
@@ -311,9 +310,8 @@
 <details class="collapsible-style">
   <summary>🧪 R&D Fellow — Fisher & Paykel Technologies (Auckland, NZ) – Dec 2019–Dec 2022</summary>
   <ul>
-    <li>Developed AI-powered control frameworks for smart building energy systems using MATLAB™, Python, and EnergyPlus™.</li>
+    <li>Developed AI-powered control frameworks for smart building energy systems using MATLAB™, Python&trade;, and EnergyPlus™.</li>
     <li>Implemented multi-objective optimization (NSGA-II, PSO) for energy-efficient and occupant-comfort-aware systems.</li>
-    <li>Led integration of surrogate modeling and machine learning to speed up simulation and real-time prediction.</li>
     <li>Work supported under the <strong>MBIE R&D Fellowship (via Callaghan Innovation)</strong>.</li>
     <li>Published in high-impact journals like <em>Annals of Operations Research</em>, <em>Building and Environment</em>, and presented at IEEE IECON.</li>
   </ul>
@@ -420,7 +418,8 @@
     .skill-float-panel { display: none; }
   }
 
-<!-- 🛠️ Collapsible Floating Skill Set Panel (desktop only) -->
+
+<!-- 🛠️ Collapsible Floating Skill Set Panel with Slide-In (desktop only) -->
 <style>
   @media (max-width: 768px) {
     #skillToggle, .skill-float-panel { display: none; }
@@ -443,7 +442,7 @@
 
   .skill-float-panel {
     position: fixed;
-    right: 10px;
+    right: -320px;
     top: 190px;
     width: 280px;
     max-height: 70vh;
@@ -455,13 +454,20 @@
     font-size: 0.95em;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     z-index: 998;
-    display: none;
+    transition: right 0.5s ease;
+  }
+
+  .skill-float-panel.show {
+    right: 10px;
   }
 </style>
-<p><button id="skillToggle" onclick="document.querySelector('.skill-float-panel').style.display = 
-document.querySelector('.skill-float-panel').style.display === 'none' ? 'block' : 'none';">
-🛠️ Skills &amp; Tools
-</button></p>
+<script>
+  function toggleSkillPanel() {
+    const panel = document.querySelector('.skill-float-panel');
+    panel.classList.toggle('show');
+  }
+</script>
+<p><button id="skillToggle" onclick="toggleSkillPanel()">🛠️ Skills &amp; Tools</button></p>
 <div class="skill-float-panel">
   <strong>⚙️ Core Competencies</strong>
   <ul>
@@ -476,11 +482,10 @@ document.querySelector('.skill-float-panel').style.display === 'none' ? 'block' 
   </ul>
 <p><strong>🔧 Simulation, Design &amp; Modeling</strong></p>
   <ul>
-    <li>EnergyPlus™, OpenStudio®, Simcenter FloVENT</li>
-    <li>AutoCAD, DIALux</li>
+    <li>EnergyPlus™ | OpenStudio® | Simcenter FloVENT</li>
+    <li>AutoCAD | DIALux</li>
   </ul>
-</div>
-</style>  </div>
+</div>  </div>
 </article>
 
 <footer>
