@@ -419,28 +419,65 @@
   @media (max-width: 768px) {
     .skill-float-panel { display: none; }
   }
+
+<!-- 🛠️ Collapsible Floating Skill Set Panel (desktop only) -->
+<style>
+  @media (max-width: 768px) {
+    #skillToggle, .skill-float-panel { display: none; }
+  }
+
+  #skillToggle {
+    position: fixed;
+    right: 10px;
+    top: 140px;
+    z-index: 999;
+    padding: 10px 14px;
+    font-weight: bold;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .skill-float-panel {
+    position: fixed;
+    right: 10px;
+    top: 190px;
+    width: 280px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background: #fdfdfd;
+    border-left: 4px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 998;
+    display: none;
+  }
 </style>
-<div class="skill-float-panel" style="position: fixed; right: 10px; top: 140px; width: 280px; max-height: 75vh; overflow-y: auto; background: #fdfdfd; border-left: 4px solid #ccc; padding: 15px; border-radius: 8px; font-size: 0.95em; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 999;">
-  <h3 style="margin-top: 0;">🛠️ Skills & Tools</h3>
-<p><strong>⚙️ Core Competencies</strong></p>
+<p><button id="skillToggle" onclick="document.querySelector('.skill-float-panel').style.display = 
+document.querySelector('.skill-float-panel').style.display === 'none' ? 'block' : 'none';">
+🛠️ Skills &amp; Tools
+</button></p>
+<div class="skill-float-panel">
+  <strong>⚙️ Core Competencies</strong>
   <ul>
-    <li>Smart Grid, BEMS, Control Systems</li>
-    <li>AI Optimization (NSGA-II, RL)</li>
+    <li>Intelligent Control Systems | Smart Grid | ELV/ICT | BEMS | Optimization</li>
+    <li>Machine Learning (Supervised, RL) | Data-Driven Modeling | Digital Twins</li>
   </ul>
-<p><strong>💻 Programming</strong></p>
+<p><strong>💻 Programming Languages &amp; Tools</strong></p>
   <ul>
-    <li>Python, MATLAB, Embedded C</li>
-    <li>TwinCAT, Ladder Logic, SCADA/HMI</li>
+    <li>Python™ (Pandas, NumPy, TensorFlow)</li>
+    <li>MATLAB® | Simulink®</li>
+    <li>Embedded C | TwinCAT | Ladder Logic | SCADA/HMI</li>
   </ul>
-<p><strong>🔧 Simulation &amp; Design</strong></p>
+<p><strong>🔧 Simulation, Design &amp; Modeling</strong></p>
   <ul>
-    <li>EnergyPlus, OpenStudio, TRNSYS</li>
-    <li>ETAP, AutoCAD, Revit, Dialux</li>
-  </ul>
-<p><strong>📊 Visualization &amp; Analytics</strong></p>
-  <ul>
-    <li>Jupyter Notebook, Matplotlib, Power BI</li>
-    <li>Interactive Dashboards (GUI in Python/MATLAB)</li>
+    <li>EnergyPlus™, OpenStudio®, Simcenter FloVENT</li>
+    <li>AutoCAD, DIALux</li>
   </ul>
 </div>
 </style>  </div>
