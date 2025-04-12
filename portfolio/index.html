@@ -419,55 +419,55 @@
   }
 
 
-<!-- 🛠️ Collapsible Floating Skill Set Panel with Slide-In (desktop only) -->
+<!-- 🛠️ Hover-Triggered Slide-In Skills Panel -->
 <style>
   @media (max-width: 768px) {
-    #skillToggle, .skill-float-panel { display: none; }
+    #skillHoverZone, .skill-float-panel { display: none; }
   }
 
-  #skillToggle {
+  #skillHoverZone {
     position: fixed;
-    right: 10px;
+    right: 0;
     top: 140px;
-    z-index: 999;
-    padding: 10px 14px;
-    font-weight: bold;
+    width: 40px;
+    height: 140px;
     background: #007acc;
     color: white;
-    border: none;
-    border-radius: 6px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    padding: 10px 5px;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.2);
   }
 
   .skill-float-panel {
     position: fixed;
-    right: -320px;
-    top: 190px;
+    top: 140px;
+    right: -300px;
     width: 280px;
     max-height: 70vh;
     overflow-y: auto;
     background: #fdfdfd;
     border-left: 4px solid #ccc;
     padding: 15px;
-    border-radius: 8px;
     font-size: 0.95em;
+    border-radius: 8px 0 0 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 998;
     transition: right 0.5s ease;
+    z-index: 999;
   }
 
-  .skill-float-panel.show {
-    right: 10px;
+  #skillHoverZone:hover + .skill-float-panel,
+  .skill-float-panel:hover {
+    right: 0;
   }
 </style>
-<script>
-  function toggleSkillPanel() {
-    const panel = document.querySelector('.skill-float-panel');
-    panel.classList.toggle('show');
-  }
-</script>
-<p><button id="skillToggle" onclick="toggleSkillPanel()">🛠️ Skills &amp; Tools</button></p>
+<div id="skillHoverZone">Skills & Tools</div>
 <div class="skill-float-panel">
   <strong>⚙️ Core Competencies</strong>
   <ul>
@@ -478,7 +478,7 @@
   <ul>
     <li>Python™ (Pandas, NumPy, TensorFlow)</li>
     <li>MATLAB® | Simulink®</li>
-    <li>Embedded C | TwinCAT | Ladder Logic | SCADA/HMI</li>
+    <li>Embedded C | TwinCAT (Beckhoff) | Ladder Logic | SCADA/HMI</li>
   </ul>
 <p><strong>🔧 Simulation, Design &amp; Modeling</strong></p>
   <ul>
