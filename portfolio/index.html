@@ -419,35 +419,30 @@
   }
 
 
-<!-- 🛠️ Hover-Triggered Slide-In Skills Panel -->
+<!-- 🛠️ Hover-Triggered Slide-In Skills Panel (horizontal button) -->
 <style>
   @media (max-width: 768px) {
-    #skillHoverZone, .skill-float-panel { display: none; }
+    #skillHoverTab, .skill-float-panel { display: none; }
   }
 
-  #skillHoverZone {
+  #skillHoverTab {
     position: fixed;
-    right: 0;
+    right: 10px;
     top: 140px;
-    width: 40px;
-    height: 140px;
+    z-index: 1001;
+    padding: 8px 16px;
+    font-weight: bold;
     background: #007acc;
     color: white;
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    text-align: center;
-    padding: 10px 5px;
-    cursor: pointer;
-    z-index: 1000;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    box-shadow: -2px 0 6px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 6px;
+    cursor: default;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 
   .skill-float-panel {
     position: fixed;
-    top: 140px;
+    top: 190px;
     right: -300px;
     width: 280px;
     max-height: 70vh;
@@ -456,18 +451,18 @@
     border-left: 4px solid #ccc;
     padding: 15px;
     font-size: 0.95em;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: right 0.5s ease;
-    z-index: 999;
+    z-index: 1000;
   }
 
-  #skillHoverZone:hover + .skill-float-panel,
+  #skillHoverTab:hover + .skill-float-panel,
   .skill-float-panel:hover {
-    right: 0;
+    right: 10px;
   }
 </style>
-<div id="skillHoverZone">Skills & Tools</div>
+<div id="skillHoverTab">🛠️ Skills & Tools</div>
 <div class="skill-float-panel">
   <strong>⚙️ Core Competencies</strong>
   <ul>
