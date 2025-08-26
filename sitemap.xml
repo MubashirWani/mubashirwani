@@ -6,7 +6,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -20,28 +20,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/archives.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/author/dr-mubashir-hussain-wani.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://www.drmubashirwani.com/author/dr-mubashir-wani.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/authors.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -54,22 +47,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.drmubashirwani.com/blog/my-second-blog-post/</loc>
-<lastmod>2025-04-18T00:00:00+04:00</lastmod>
+<loc>https://www.drmubashirwani.com/blog/turning-research-into-impact/</loc>
+<lastmod>2025-08-26T00:00:00+04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/categories.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/category/blog/</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
@@ -97,42 +90,56 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.drmubashirwani.com/tag/ai.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://www.drmubashirwani.com/tag/digital-twins.html</loc>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/tag/engineering.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/tag/personal.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://www.drmubashirwani.com/tag/publications.html</loc>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/tag/reflection.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/tag/research.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://www.drmubashirwani.com/tags.html</loc>
-<lastmod>2025-08-23T15:08:32-00:00</lastmod>
+<lastmod>2025-08-26T15:56:46-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
